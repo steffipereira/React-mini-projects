@@ -1,37 +1,8 @@
 import BlogList from './BlogList';
-import { useState, useEffect, useCallback } from 'react';
+import useFetch from '../hooks/useFetch';
 
 const Home = () => {
-  const [blogs, setBlogs] = useState(null);
-  const [loader, setLoader] = useState(true);
-  const [error, setError] = useState(true);
-
-  // useEffect(() => {
-  //   fetch('http://localhost:8000/blogs')
-  //   .then(response => response.json())
-  //   .then(json => console.log(json))
-  // }, [])
-
-  const handleFetch = useCallback(async () => {
-
-    const response = await fetch('http://localhost:8000/blogs');
-    if (!response.ok) {
-      setLoader(false)
-      setError(true)
-    } else {
-      const data = await response.json();
-        setError(false)
-        setLoader(false)
-        setTimeout(() => {
-          setBlogs(data)
-        }, 500);
-    }
-
-  },[]);
-
-  useEffect(() => {
-    handleFetch()
-  },[]);
+  const { data:blogs, loader, error } = useFetch('http://localhost:8000/blogs')
 
   return (
     <div className="mt-3">
