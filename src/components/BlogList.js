@@ -1,4 +1,5 @@
 import { Card, Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 
 const BlogList = ({ blogs }) => {
   return (
@@ -11,7 +12,9 @@ const BlogList = ({ blogs }) => {
           <Card.Text>
             {blog.body.slice(0, 40).concat('...')}
           </Card.Text>
-          <Button className="mr-2">Read More</Button>
+          <Link to={`/blogs/${blog.id}`}>
+            <Button className="mr-2">Read More</Button>
+          </Link>
         </Card.Body>
       </Card>
       )) }
