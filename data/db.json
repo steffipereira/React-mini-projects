@@ -1,23 +1,23 @@
 {
   "blogs": [
     {
-      "id" : 1,
+      "id": 1,
       "author": "Gary Gastelu",
       "title": "Federal safety agency talking Tesla about strange steering wheel",
       "body": "NHTSA said it is reaching out to Tesla to determine if the automaker's new rectangular steering wheel meets federal safety standards."
     },
     {
-      "id" : 2,
+      "id": 2,
       "author": "Cointelegraph By Michaël van de Poppe",
       "title": "World's richest man Elon Musk boosts Bitcoin price by 20% — Is $40K back in play?",
       "body": "The price of Bitcoin has seemingly broken out from its recent slump,as a significant momentum shift occurred in recent days. \r\nThe GameStop debacle raised many… [+3773 chars]"
     },
     {
-      "id" : 3,
+      "id": 3,
       "author": "pooneh",
       "title": "Elon Musk accuses Discord of 'going corporate' after it bans Reddit group that is boosting Gamestop stock",
       "body": "Elon Musk has accused Discord of 'going corporate' after it banned a Reddit group which is boosting Gamestop, American Airlines and other shorted stocks to the fury of billionaire hedge fund managers.",
-    "content": "Elon Musk has accused Discord of 'going corporate' after it banned a Reddit group which is boosting Gamestop, American Airlines and other shorted stocks to the fury of billionaire hedge fund managers… [+19889 chars]"
+      "content": "Elon Musk has accused Discord of 'going corporate' after it banned a Reddit group which is boosting Gamestop, American Airlines and other shorted stocks to the fury of billionaire hedge fund managers… [+19889 chars]"
     }
   ]
 }

@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 import Create from './components/Create'
 import Home from './components/Home'
 import BlogDetails from './components/BlogDetails'
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const App = () => {
   return (
@@ -15,6 +15,10 @@ const App = () => {
           <Route exact path="/" component={Home} />
           <Route path="/create" component={Create} />
           <Route path="/blogs/:id" component={BlogDetails} />
+          <Route path="*">
+            <p className="my-2">Cant find what you looking for. </p>
+            <Link to="/"><p>Go to Home</p></Link>
+          </Route>
         </Switch>
       </div>
     </div>
