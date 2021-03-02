@@ -19,9 +19,6 @@ const TodoTask = ({task, isChecked, id, handleChecked, deleteTask}) => {
           >
             Delete
           </button>
-          <button className="btn btn-sm btn-outline-success">
-            Edit
-          </button>
         </div>
       </li>
     </div>
