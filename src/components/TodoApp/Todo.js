@@ -20,26 +20,6 @@ const TODO = [
       "id": 3,
       "task": "Sleep",
       "isChecked": true
-    },
-    {
-      "id": "AMr5sA241CaYn0TwQn_9K",
-      "task": "asda",
-      "isChecked": false
-    },
-    {
-      "id": "51gXCZz4MjSBBcCcyxZ8H",
-      "task": "asda",
-      "isChecked": false
-    },
-    {
-      "id": "_tik3t2eB9kIx9IzhfEnN",
-      "task": "asda",
-      "isChecked": false
-    },
-    {
-      "id": "7l6N-0LSTlvx3cGYBRInc",
-      "task": "oyu",
-      "isChecked": false
     }
   ]
 const Todo = () => {
@@ -48,7 +28,6 @@ const Todo = () => {
   const [newTask, setNewTask] = useState('')
   const [buttons, setButtons] = useState('all')
   const taskNoun = list.length ? 'tasks' : 'task'
-  const [variant, setVariant] = useState('primary')
 
   const handleSubmit = async(e) => {
     e.preventDefault()
@@ -88,7 +67,6 @@ const Todo = () => {
     const deletedTask = list.filter(task => task.id !== id)
     setList(deletedTask)
   }
-  console.log(list)
   return (
     <div>
       <AddTask

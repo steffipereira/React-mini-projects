@@ -1,5 +1,3 @@
-import { useState, useEffect, useCallback } from 'react'
-
 const TodoTask = ({task, isChecked, id, handleChecked, deleteTask}) => {
   return (
     <div>

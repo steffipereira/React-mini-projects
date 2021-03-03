@@ -12,7 +12,7 @@ const BlogList = ({ blogs }) => {
           <Card.Text>
             {blog.body.slice(0, 40).concat('...')}
           </Card.Text>
-          <Link to={`/blogs/${blog.id}`}>
+          <Link to={`/blog/blogs/${blog.id}`}>
             <Button className="mr-2">Read More</Button>
           </Link>
         </Card.Body>

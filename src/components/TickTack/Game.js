@@ -1,7 +1,6 @@
 import Boards from "./Boards"
-import calculateWinner from '../helpers/winner'
+import calculateWinner from '../../helpers/winner'
 import { useState } from "react";
-
 
 const Game = () => {
   const [board, setBoard] = useState(Array(9).fill(null));

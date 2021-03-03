@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { Button } from 'react-bootstrap'
-import useFetch from "../hooks/useFetch";
+import useFetch from "../../hooks/useFetch";
 import { useHistory } from 'react-router-dom';
 
 const BlogDetails = () => {
