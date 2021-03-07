@@ -29,3 +29,11 @@ code {
 .orange {
   color: 	#f97a5b;
 }
+
+.card-img-flip {
+  opacity: 0;
+}
+
+.card-img-unflip {
+  opacity: 1;
+}

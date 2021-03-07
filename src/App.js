@@ -6,6 +6,7 @@ import TickTack from './components/TickTack'
 import TodoList from './components/TodoList'
 import BlogDetails from './components/Blog/BlogDetails'
 import Projects from './components/Projects'
+import MemoryGame from './components/MemoryGame'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
           <Route exact path="/home" component={Home} />
           <Route exact path="/ticktack" component={TickTack} />
           <Route exact path="/todolist" component={TodoList} />
+          <Route exact path="/memory-game" component={MemoryGame} />
           <Route path="/blog/create" component={Create} />
           <Route path="/blog/blogs/:id" component={BlogDetails} />
           <Route path="*">
